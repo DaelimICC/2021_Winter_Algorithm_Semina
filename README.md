@@ -23,7 +23,7 @@
 |---|-----------------------|---|
 |버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)||
 |퀵 정렬|[Mammom](https://github.com/Mammom)||
-|병합 정렬|[gudwns1458](https://github.com/gudwns1458)||
+|병합 정렬|[MallangMallang](https://github.com/gudwns1458)||
 |힙 정렬|[미지정]()||
 |기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)||
 |계수 정렬|[Hod0ri](https://github.com/Hod0ri)||
@@ -33,6 +33,6 @@
 ### Collaborators
 ![Mammom](https://avatars.githubusercontent.com/u/89181586?s=64&v=4)
 ![NightRabbit](https://avatars.githubusercontent.com/u/92222661?s=64&v=4)
-![guswns1458](https://avatars.githubusercontent.com/u/70959328?s=64&v=4)
+![MallangMallang](https://avatars.githubusercontent.com/u/70959328?s=64&v=4)
 <img src="https://avatars.githubusercontent.com/u/47372381?s=64&v=4" width="65" height="65"/>
 ![Hod0ri](https://avatars.githubusercontent.com/u/65306839?s=64&v=4)
