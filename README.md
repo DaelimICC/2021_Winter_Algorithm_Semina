@@ -19,14 +19,14 @@
 <br/>
 
 ### 주제 1 (2021.12.22 ~ )
-|주제|담당자|
-|---|-----------------------|
-|버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)|
-|퀵 정렬|[Mammom](https://github.com/Mammom)|
-|병합 정렬|[gudwns1458](https://github.com/gudwns1458)|
-|힙 정렬|[미지정]()|
-|기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)|
-|계수 정렬|[Hod0ri](https://github.com/Hod0ri)|
+|주제| 1차 담당자| 2차 담당자 |
+|---|-----------------------|---|
+|버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)||
+|퀵 정렬|[Mammom](https://github.com/Mammom)||
+|병합 정렬|[gudwns1458](https://github.com/gudwns1458)||
+|힙 정렬|[미지정]()||
+|기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)||
+|계수 정렬|[Hod0ri](https://github.com/Hod0ri)||
 
 **위 정렬에 대한 개요와 개개인의 리서치한 결과를 다음주 중에 있을 세미나를 준비하시오.**
 <br/><br/>
