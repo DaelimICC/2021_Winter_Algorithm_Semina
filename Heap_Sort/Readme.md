@@ -15,3 +15,67 @@
 힙은 '이진트리'이되 '완전 이진 트리'이다. 그리고 모든 노드에 저장된 값은 자식 노드에 저장된 값보다 크거나 같아야 한다.
 
 ## Ex Code
+"""C
+#include <stdio.h>
+
+void heapify(int heap[], int num)
+{
+	for (int i = 1; i < num; i++)
+	{
+		int count = i;
+		do {
+			int root = (count - 1) / 2;
+			if (heap[root] < heap[count])
+			{
+				int temp = heap[root];
+				heap[root] = heap[count];
+				heap[count] = temp;
+			}
+			count = root;
+		} while (count != 0);
+	}
+}
+void heapSort(int heap[], int num)
+{
+	for (int i = num - 1; i >= 0; i--)
+	{
+		int temp = heap[0];
+		heap[0] = heap[i];
+		heap[i] = temp;
+		int root = 0;
+		int count = 1;
+		do {
+			count = 2 * root + 1;
+			if (heap[count] < heap[count + 1] && count < i - 1)
+			{
+				count++;
+			}
+			if (heap[root] < heap[count] && count < i)
+			{
+				int temp = heap[root];
+				heap[root] = heap[count];
+				heap[count] = temp;
+			}
+			root = count;
+		} while (count < i);
+	}
+}
+void arrprint(int heap[],int num)
+{
+	for (int i = 0; i < num; i++)
+	{
+		printf("%d ", heap[i]);
+	}
+}
+int main(void)
+{
+	int num = 9;
+	int heaparr[9] = { 7,6,5,8,3,5,9,1,6 };
+
+	heapify(heaparr, num);
+	heapSort(heaparr, num);
+	arrprint(heaparr, num);
+	return 0;
+
+}
+"""
