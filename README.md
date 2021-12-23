@@ -23,7 +23,7 @@
 |---|-----------------------|---|
 |버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)||
 |퀵 정렬|[Mammom](https://github.com/Mammom)||
-|병합 정렬|[MallangMallang](https://github.com/gudwns1458)||
+|병합 정렬|[MallangMallang](https://github.com/Mallang-Mallang)||
 |힙 정렬|[미지정]()||
 |기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)||
 |계수 정렬|[Hod0ri](https://github.com/Hod0ri)||
