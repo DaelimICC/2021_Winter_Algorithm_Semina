@@ -15,7 +15,7 @@
 힙은 '이진트리'이되 '완전 이진 트리'이다. 그리고 모든 노드에 저장된 값은 자식 노드에 저장된 값보다 크거나 같아야 한다.
 
 ## Ex Code
-"""C
+```C
 #include <stdio.h>
 
 void heapify(int heap[], int num)
@@ -78,4 +78,4 @@ int main(void)
 	return 0;
 
 }
-"""
+```
