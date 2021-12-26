@@ -55,5 +55,10 @@ arr = [1, 0, 0, 0, 2, 2, 1, 1, 3, 4, 2, 1, 5]
 |---|---|---|---|---|---|---|---|---|
 |Element|0|1|2|2|3|4|5|5|
 
+## Code Review
+|Language|Writer|
+|---|---|
+|[C/C++](https://github.com/Hod0ri/Algorithm_Semina/blob/main/Counting%20Sort/CodeReview_cpp.md)|Hod0ri|
+
 ## Complex
 최대 원소의 크기와 배열의 크기에 따라서 생성되어야 할 추가적인 배열의 크기가 커지기 때문에, 메모리의 영향을 받는다. 
