@@ -54,3 +54,30 @@ sorted = new int[size] {0};
 1을 더하는 이유는 0 Index 배열이기에, 1을 더해주어야 인덱스가 곧 원소 값이 되기 때문이다.  
 <br/>
 마무리로, sorted 배열도 원본 배열하고 같은 길이만큼 생성한다.
+
+```cpp
+// Counting Element
+for (int i = 0; i < size; i++) counting[arr[i]]++;
+
+// Cumulative Sum
+for (int i = 1; i <= maxNum; i++) counting[i] += counting[i - 1];
+```
+다음, 각 원소의 개수를 세주면 된다.  
+각 원소를 센 다음, 각 원소의 누적합을 연산해준다.  
+누적합을 통해 정렬하기 위함이다.  
+
+```cpp
+// Sorting
+for (int i = 0; i < size; i++)
+{
+	sorted[counting[arr[i]] - 1] = arr[i];
+	counting[arr[i]]--;
+}
+for (int i = 0; i < size; i++) arr[i] = sorted[i];
+```
+다음, 누적합 배열을 통해 정렬된 배열을 도출해내면 정렬은 끝나며, 동적 배열을 마무리로 아래와 같이 해제해주면 된다.  
+```cpp
+// Clear Dynamic
+delete[] counting;
+delete[] sorted;
+```
