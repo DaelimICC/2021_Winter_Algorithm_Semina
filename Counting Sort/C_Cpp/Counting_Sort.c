@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2021 DaelimCollege_JumpStudy
+
+
 #include <stdio.h>
 #define max 30
 
