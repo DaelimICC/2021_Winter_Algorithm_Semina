@@ -29,9 +29,7 @@
 	 연결리스트 기반으로 힙을 구현하면, 새로운 노드를 힙의 '마지막 위치'에 추가하는 것이 쉽지 않기 때문이다
 
 
-![ex_screenshot](./img/heap.png)
-![ex_screenshot](./img/figure_2.png)
-![ex_screenshot](./img/figure_3.png)
+
 
 
 > 이 사진이 힙 구조를 표현한 것이다.
@@ -81,7 +79,7 @@ void heapSort(int heap[], int num)
 		do {
 			count = 2 * root + 1;
 			// 자식 중 더 큰 값을 찾은 다음
-			if (heap[count] < heap[count + 1] && count < i - 1)
+			if (heap[count] < heap[count + 1] && count < i - 1) // 자식끼리 비교하나 범위를 벗어나지 않게
 			{
 				count++;
 			}
@@ -92,7 +90,7 @@ void heapSort(int heap[], int num)
 				heap[root] = heap[count];
 				heap[count] = temp;
 			}
-			root = count;
+			root = count; 
 		} while (count < i);
 	}
 }
