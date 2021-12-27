@@ -31,7 +31,7 @@
 	 연결리스트 기반으로 힙을 구현하면, 새로운 노드를 힙의 '마지막 위치'에 추가하는 것이 쉽지 않기 때문이다.
 <br><br>
 ### heapify 예시
-최대 힙 구조를 만드는 heapify
+최대 힙 구조를 만드는 heapify<br>
 ![ex_screenshot](./img/heapify.png)
 <br><br>
 
