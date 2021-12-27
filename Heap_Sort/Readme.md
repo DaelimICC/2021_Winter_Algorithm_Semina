@@ -30,6 +30,8 @@
 
 
 ![ex_screenshot](./img/heap.png)
+![ex_screenshot](./img/figure_2.png)
+![ex_screenshot](./img/figure_3.png)
 
 
 > 이 사진이 힙 구조를 표현한 것이다.
