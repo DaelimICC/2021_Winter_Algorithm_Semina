@@ -1,6 +1,6 @@
 // MIT License
 // Copyright (c) 2021 DaelimCollege_JumpStudy
-
+// author : Hodori
 
 #include <stdio.h>
 #define max 30
