@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2021 DaelimCollege_JumpStudy
+// author : Hodori
+
 #include <iostream>
 
 using namespace std;
