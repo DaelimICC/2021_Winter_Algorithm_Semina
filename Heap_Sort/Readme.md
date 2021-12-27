@@ -34,14 +34,12 @@
 
 > 이 사진이 힙 구조를 표현한 것이다.
 
-
-
-
+<br>
 
 ## 힙 정렬의 시간복잡도(Time Complexity)
 ![ex_screenshot](./img/timeComplexity1.jpg)
 * 힙 정렬은 평균과 최악에서의 시간 복잡도가 O(nlog n)인 강력한 정렬 알고리즘이다.
-* 
+* 힙 정렬이 최대 힙 구성하는 과정에서 분할 정복이 사용되어서 분할 정복 이라고 하는 사람들도 있지만 분할정복으로 보지 않는 견해도 많다.
 
 
 
@@ -54,7 +52,7 @@ void heapify(int heap[], int num)
 {
 // 힙 생성 알고리즘 
 	for (int i = 1; i < num; i++)
-	{ //힙을 구조화한 알고리즘
+	{ // 트리 구조를 최대 힙 구조로 변환
 		int count = i;
 		do {
 			int root = (count - 1) / 2;
@@ -70,8 +68,9 @@ void heapify(int heap[], int num)
 }
 void heapSort(int heap[], int num)
 {
+// 힙 크기를 줄이면서 반복적으로 힙을 구성 하는 함수
 	for (int i = num - 1; i >= 0; i--)
-	{
+	{ // 반복적으로 힙구조를 구성하여 정렬 한다.
 		int temp = heap[0];
 		heap[0] = heap[i];
 		heap[i] = temp;
@@ -79,10 +78,12 @@ void heapSort(int heap[], int num)
 		int count = 1;
 		do {
 			count = 2 * root + 1;
+			// 자식 중 더 큰 값을 찾은 다음
 			if (heap[count] < heap[count + 1] && count < i - 1)
 			{
 				count++;
 			}
+			// root보다 자식 노드 가 더 크면 swap
 			if (heap[root] < heap[count] && count < i)
 			{
 				int temp = heap[root];
@@ -94,7 +95,8 @@ void heapSort(int heap[], int num)
 	}
 }
 void arrprint(int heap[],int num)
-{
+{ 
+//정렬된 배열을 출력하는 함수
 	for (int i = 0; i < num; i++)
 	{
 		printf("%d ", heap[i]);
@@ -112,6 +114,7 @@ int main(void)
 
 }
 ```
+<br>
 
 ### 코드 실행시 출력결과
 ![ex_screenshot](./img/output.png)
