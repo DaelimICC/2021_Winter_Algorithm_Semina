@@ -31,6 +31,7 @@
 	 연결리스트 기반으로 힙을 구현하면, 새로운 노드를 힙의 '마지막 위치'에 추가하는 것이 쉽지 않기 때문이다.
 <br><br>
 ### heapify 예시
+최대 힙 구조를 만드는 heapify
 ![ex_screenshot](./img/heapify.png)
 <br><br>
 
@@ -57,7 +58,7 @@
 ```C
 #include <stdio.h>
 
-void heapify(int heap[], int num)// 힙 생성 알고리즘 
+void firstheapify(int heap[], int num)// 힙 생성 알고리즘 
 {
 	for (int i = 1; i < num; i++)
 	{ // 트리 구조를 최대 힙 구조로 변환
@@ -71,7 +72,7 @@ void heapify(int heap[], int num)// 힙 생성 알고리즘
 				heap[root] = heap[count];
 				heap[count] = temp;
 			}
-			count = root;
+			count = root; // 자식의 부모로 이동
 		} while (count != 0);
 	}
 }
@@ -81,15 +82,15 @@ void heapSort(int heap[], int num)// 힙 크기를 줄이면서 반복적으로 
 	{ // 반복적으로 힙구조를 구성하여 정렬 한다.
 		int temp = heap[0];
 		heap[0] = heap[i];
-		heap[i] = temp;
+		heap[i] = temp;// 가장 큰 값 뒤로 보내기
 		int root = 0;
 		int count = 1;
 		do {
-			count = 2 * root + 1;
+			count = 2 * root + 1; //count 는 자식
 			// 자식 중 더 큰 값을 찾은 다음
-			if (heap[count] < heap[count + 1] && count < i - 1) // 자식끼리 비교하나 범위를 벗어나지 않게
+			if (heap[count] < heap[count + 1] && count < i - 1) // 자식끼리 비교해 범위를 벗어나지 않게 큰 자식 count에 담기
 			{
-				count++;
+				count++; 
 			}
 			// root보다 자식 노드 가 더 크면 swap
 			if (heap[root] < heap[count] && count < i)
@@ -98,7 +99,7 @@ void heapSort(int heap[], int num)// 힙 크기를 줄이면서 반복적으로 
 				heap[root] = heap[count];
 				heap[count] = temp;
 			}
-			root = count; 
+			root = count;  // count값을 root로 넣어서 계속해서 재귀적으로 실행
 		} while (count < i);
 	}
 }
@@ -115,7 +116,7 @@ int main(void)
 	int num = 9;
 	int heaparr[9] = { 4,6,5,8,3,10,9,1,7 };
 
-	heapify(heaparr, num);
+	firstheapify(heaparr, num);
 	heapSort(heaparr, num);
 	arrprint(heaparr, num);
 	return 0;
