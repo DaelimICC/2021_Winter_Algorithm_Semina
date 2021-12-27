@@ -34,6 +34,16 @@
 
 > 이 사진이 힙 구조를 표현한 것이다.
 
+
+
+
+
+## 힙 정렬의 시간복잡도(Time Complexity)
+![ex_screenshot](./img/timeComplexity.png)
+
+
+
+
 ## Ex Code
 ```C
 #include <stdio.h>
