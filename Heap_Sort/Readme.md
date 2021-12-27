@@ -39,7 +39,9 @@
 
 
 ## 힙 정렬의 시간복잡도(Time Complexity)
-![ex_screenshot](./img/timeComplexity1.png)
+![ex_screenshot](./img/timeComplexity1.jpg)
+* 힙 정렬은 평균과 최악에서의 시간 복잡도가 O(nlog n)인 강력한 정렬 알고리즘이다.
+* 
 
 
 
