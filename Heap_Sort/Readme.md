@@ -39,7 +39,7 @@
 
 
 ## 힙 정렬의 시간복잡도(Time Complexity)
-![ex_screenshot](./img/timeComplexity.png)
+![ex_screenshot](./img/timeComplexity1.png)
 
 
 
