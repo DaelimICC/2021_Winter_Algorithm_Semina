@@ -24,7 +24,7 @@
 
 힙정렬을 하기 위해서는 정해진 데이터들을 힙 구조를 가지게 만들어야 한다.
 ~~~
-
+![ex_screenshot](./img/type-of-heap.png)
 ## Ex Code
 ```C
 #include <stdio.h>
