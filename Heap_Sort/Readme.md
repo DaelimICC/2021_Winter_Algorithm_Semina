@@ -23,6 +23,8 @@
 힙에는 최대 힙과 최소 힙이 존재하는데 최대 힙은 '부모 노드'가 '자식 노드'보드 큰 힙이라고 할 수 있다. 즉 더 큰 값이 '부모 노드'가 된다.
 
 힙정렬을 하기 위해서는 정해진 데이터들을 힙 구조를 가지게 만들어야 한다.
+
+힙생성(heapify) 알고리즘을 사용하여 최대 힙으로 배열을 구성 하고 그 후 힙 정렬을 수행하여 오름차순으로 표현 할 것이다.
 ~~~
 
 #### 힙 구조는 완전 이진 트리 구조를 갖는다고 연결리스트로 표현한다고 생각할지 모르지만 '힙'은 배열 기반으로 구현해야 한다.
@@ -31,6 +33,8 @@
 <br><br>
 
 ### 힙 정렬의 순서
+먼저 힙 구조를 만든 후에 시행한다.<br>
+
 ![ex_screenshot](./img/heaparr.png)
 > *  완전 이진트리를 이루는 힙 구조를 배열 기반으로 표현 한 이미지 이다.<br>
 > *  부모노드를 표현하는 식과 자식 노드들을 표현하는 식
@@ -51,13 +55,13 @@
 ```C
 #include <stdio.h>
 
-void heapify(int heap[], int num)
+void heapify(int heap[], int num)// 힙 생성 알고리즘 
 {
-// 힙 생성 알고리즘 
 	for (int i = 1; i < num; i++)
 	{ // 트리 구조를 최대 힙 구조로 변환
-		int count = i;
+		int count = i; // 1부터 지정하는 이유는 자식노드는 1부터 있기때문에
 		do {
+		// count가 0이 아닐때 까지 자 크면 
 			int root = (count - 1) / 2;
 			if (heap[root] < heap[count])
 			{
@@ -69,9 +73,8 @@ void heapify(int heap[], int num)
 		} while (count != 0);
 	}
 }
-void heapSort(int heap[], int num)
+void heapSort(int heap[], int num)// 힙 크기를 줄이면서 반복적으로 힙을 구성 하여 정렬하는 함수
 {
-// 힙 크기를 줄이면서 반복적으로 힙을 구성 하는 함수
 	for (int i = num - 1; i >= 0; i--)
 	{ // 반복적으로 힙구조를 구성하여 정렬 한다.
 		int temp = heap[0];
