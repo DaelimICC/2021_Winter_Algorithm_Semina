@@ -30,7 +30,7 @@
   4) 부분 리스트들이 더 이상 분할이 불가능할 때까지 반복한다.
     - 리스트의 크기가 0이나 1이 될 때까지 반복한다. 
 ~~~
-<img src= "https://user-images.githubusercontent.com/89181586/147400760-b46b0572-cc5f-4e81-9fa5-48df3d6758a5.png" width="500" height="500"/>
+<img src= "https://user-images.githubusercontent.com/89181586/147576062-5d39cf08-bc59-4516-882f-8d019e985bb9.PNG" width="500" height="300"/>
 
 ## 5) 퀵정렬(quick_sort) 장단점?
 ~~~
