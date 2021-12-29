@@ -2,24 +2,24 @@
 
 ~~~Kotlin
 import java.util.*
-var data = arrayOf<Int>(3,2,1,4,6,7,8,10,9,5)
+var data = arrayOf<Int>(3,2,1,4,6,10,8,7,9,5)
 
 fun qucik_sort(data: Array<Int>, start: Int, end: Int){
     if(start >= end){
         return
     }
     var pivot = start
-    var leftdepart = pivot +1
-    var rightdepart = end
-    var temp = 0
+    var leftdepart = pivot
+    var rightdepart = end +1
+    var temp=0
 
     while (leftdepart <= rightdepart){
-        while (leftdepart <= end && data[leftdepart] <= data[pivot]){
+        do{
             leftdepart++
-        }
-        while (rightdepart > start && data[rightdepart] >= data[pivot]){
+        } while (leftdepart < end && data[leftdepart] < data[pivot])
+        do{
             rightdepart--
-        }
+        } while (rightdepart > start && data[rightdepart] > data[pivot])
 
         if(leftdepart > rightdepart){
             temp = data[rightdepart]
@@ -40,7 +40,5 @@ fun main(){
     qucik_sort(data,0,9)
     println(Arrays.toString(data))
 }
-
-
 ~~~
 Copyright (c) 2021 DaelimCollege_JumpStudy
