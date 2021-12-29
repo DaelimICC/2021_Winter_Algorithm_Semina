@@ -8,13 +8,13 @@ int main(void)
 	int arr[10] = { 5, 9, 8, 3, 5, 4, 6, 12, 2, 4 };
 
 	// Print Pre-Sort List Values
-	for (int i = 0; i < 10; i++) cout << arr[i] << " ";
+	for (int index = 0; index < 10; index++) cout << arr[index] << " ";
 	cout << '\n';
 
 	Counting_sort(arr, 10);
 
 	// Print Post-Sort List Values
-	for (int i = 0; i < 10; i++) cout << arr[i] << " ";
+	for (int index = 0; index < 10; index++) cout << arr[index] << " ";
 	cout << '\n';
 
 	return 0;
@@ -41,7 +41,7 @@ int maxNum = 0;
 
 ```cpp
 // Find Max Number to create Counting Array
-for (int i = 0; i < size; i++) if (arr[i] > maxNum) maxNum = arr[i];
+for (int index = 0; index < size; index++) if (arr[index] > maxNum) maxNum = arr[index];
 
 // Create Counting Array size of MaxNuM + 1 (because Zero-Start)
 counting = new int[maxNum + 1]{ 0 };
@@ -57,10 +57,10 @@ sorted = new int[size] {0};
 
 ```cpp
 // Counting Element
-for (int i = 0; i < size; i++) counting[arr[i]]++;
+for (int index = 0; index < size; index++) counting[arr[index]]++;
 
 // Cumulative Sum
-for (int i = 1; i <= maxNum; i++) counting[i] += counting[i - 1];
+for (int index = 1; i <= maxNum; index++) counting[index] += counting[index - 1];
 ```
 다음, 각 원소의 개수를 세주면 된다.  
 각 원소를 센 다음, 각 원소의 누적합을 연산해준다.  
@@ -68,12 +68,12 @@ for (int i = 1; i <= maxNum; i++) counting[i] += counting[i - 1];
 
 ```cpp
 // Sorting
-for (int i = 0; i < size; i++)
+for (int index = 0; index < size; index++)
 {
-	sorted[counting[arr[i]] - 1] = arr[i];
-	counting[arr[i]]--;
+	sorted[counting[arr[index]] - 1] = arr[index];
+	counting[arr[index]]--;
 }
-for (int i = 0; i < size; i++) arr[i] = sorted[i];
+for (int index = 0; index < size; index++) arr[index] = sorted[index];
 ```
 다음, 누적합 배열을 통해 정렬된 배열을 도출해내면 정렬은 끝나며, 동적 배열을 마무리로 아래와 같이 해제해주면 된다.  
 ```cpp
