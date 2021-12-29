@@ -40,4 +40,7 @@ fun main(){
     qucik_sort(data,0,9)
     println(Arrays.toString(data))
 }
+
+
 ~~~
+Copyright (c) 2021 DaelimCollege_JumpStudy
