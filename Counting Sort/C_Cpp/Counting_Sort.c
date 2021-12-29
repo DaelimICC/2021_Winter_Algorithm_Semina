@@ -1,7 +1,3 @@
-// MIT License
-// Copyright (c) 2021 DaelimCollege_JumpStudy
-// author : Hodori
-
 #include <stdio.h>
 #define max 30
 
@@ -9,20 +5,20 @@ void counting_sort(int* arr, int size) {
 
 	int count[max];
 	// Create Count Value
-	for (int i = 0; i < max; i++) {
-		count[i] = 0;
+	for (int index = 0; index < max; index++) {
+		count[index] = 0;
 	}
 
 	// Count Element
-	for (int i = 0; i < size; i++) {
-		int val = arr[i];
+	for (int index = 0; index < size; index++) {
+		int val = arr[index];
 		count[val]++;
 	}
 
 	// Print Sorted Array
-	for (int i = 0; i < max; i++) {
-		for (int j = 0; j < count[i]; j++) {
-			printf("%d ", i);
+	for (int index = 0; index < max; index++) {
+		for (int temp = 0; temp < count[index]; temp++) {
+			printf("%d ", index);
 		}
 	}
 }

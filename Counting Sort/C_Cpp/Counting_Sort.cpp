@@ -1,7 +1,3 @@
-// MIT License
-// Copyright (c) 2021 DaelimCollege_JumpStudy
-// author : Hodori
-
 #include <iostream>
 
 using namespace std;
@@ -14,7 +10,7 @@ void Counting_sort(int* arr, int size)
 	int maxNum = 0;
 
 	// Find Max Number to create Counting Array
-	for (int i = 0; i < size; i++) if (arr[i] > maxNum) maxNum = arr[i];
+	for (int index = 0; index < size; index++) if (arr[index] > maxNum) maxNum = arr[index];
 
 	// Create Counting Array size of MaxNuM + 1 (because Zero-Start)
 	counting = new int[maxNum + 1]{ 0 };
@@ -23,18 +19,18 @@ void Counting_sort(int* arr, int size)
 	sorted = new int[size] {0};
 
     // Counting Element
-	for (int i = 0; i < size; i++) counting[arr[i]]++;
+	for (int index = 0; index < size; index++) counting[arr[index]]++;
 
 	// Cumulative Sum
-	for (int i = 1; i <= maxNum; i++) counting[i] += counting[i - 1];
+	for (int index = 1; index <= maxNum; i++) counting[i] += counting[index - 1];
 	
 	// Sorting
-	for (int i = 0; i < size; i++)
+	for (int index = 0; index < size; index++)
 	{
-		sorted[counting[arr[i]] - 1] = arr[i];
-		counting[arr[i]]--;
+		sorted[counting[arr[index]] - 1] = arr[index];
+		counting[arr[index]]--;
 	}
-	for (int i = 0; i < size; i++) arr[i] = sorted[i];
+	for (int index = 0; index < size; index++) arr[index] = sorted[index];
 
 	// Clear Dynamic
 	delete[] counting;
