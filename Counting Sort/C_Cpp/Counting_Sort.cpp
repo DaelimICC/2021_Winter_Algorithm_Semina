@@ -43,13 +43,13 @@ int main(void)
 	int arr[10] = { 5, 9, 8, 3, 5, 4, 6, 12, 2, 4 };
 
 	// Print Pre-Sort List Values
-	for (int i = 0; i < 10; i++) cout << arr[i] << " ";
+	for (int index = 0; index < 10; index++) cout << arr[index] << " ";
 	cout << '\n';
 
 	Counting_sort(arr, 10);
 
 	// Print Post-Sort List Values
-	for (int i = 0; i < 10; i++) cout << arr[i] << " ";
+	for (int index = 0; index < 10; index++) cout << arr[index] << " ";
 	cout << '\n';
 
 	return 0;
