@@ -16,10 +16,10 @@ fun qucik_sort(data: Array<Int>, start: Int, end: Int){
     while (leftdepart <= rightdepart){
         do{
             leftdepart++
-        } while (leftdepart < end && data[leftdepart] < data[pivot])
+        } while (leftdepart <= end && data[leftdepart] <= data[pivot])
         do{
             rightdepart--
-        } while (rightdepart > start && data[rightdepart] > data[pivot])
+        } while (rightdepart > start && data[rightdepart] >= data[pivot])
 
         if(leftdepart > rightdepart){
             temp = data[rightdepart]
