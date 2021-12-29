@@ -1,4 +1,4 @@
-# Comparison Sort
+# Counting Sort
 1st Writter : Hod0ri
   
 ## Scope
