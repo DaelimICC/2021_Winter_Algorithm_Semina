@@ -80,11 +80,12 @@ variable_Array = [’badge’ ,’bag’, ‘banner', ‘midnight’, ‘wander'
 
                                                              # LSD 방식
 
-(./Radix Sort_Tasty_Programmer_image/vMR0Dt.gif)
+![screenshot](./Radix Sort_Tasty_Programmer_image/vMR0Dt.gif)
+
 
                                                              # MSD 방식
 
-(./Radix Sort_Tasty_Programmer_image/Radix_Sort_MSD.gif)
+![screenshot](./Radix Sort_Tasty_Programmer_image/Radix_Sort_MSD.gif)
 
                                                                   
 
