@@ -19,14 +19,14 @@
 <br/>
 
 ### 주제 1 (2021.12.22 ~ )
-|주제| 1차 담당자| 2차 담당자 |
-|---|-----------------------|---|
-|버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)|[pdhyeong](https://github.com/pdhyeong)|
-|퀵 정렬|[Mammom](https://github.com/Mammom)|[MallangMallang](https://github.com/Mallang-Mallang)|
+|주제| 1차 담당자| 2차 담당자 | 3차 담당자 |
+|---|-----------------------|---|---|
+|버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)|[pdhyeong](https://github.com/pdhyeong)||
+|퀵 정렬|[Mammom](https://github.com/Mammom)|[MallangMallang](https://github.com/Mallang-Mallang)||
 |병합 정렬|[MallangMallang](https://github.com/Mallang-Mallang)|[Mammom](https://github.com/Mammom)||
-|힙 정렬|[pdhyeong](https://github.com/pdhyeong)|[NightRabbits](https://github.com/NightRabbits)|
-|기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Hod0ri](https://github.com/Hod0ri)|
-|계수 정렬|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)|
+|힙 정렬|[pdhyeong](https://github.com/pdhyeong)|[NightRabbits](https://github.com/NightRabbits)||
+|기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Hod0ri](https://github.com/Hod0ri)||
+|계수 정렬|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)||
 
 **위 정렬에 대한 개요와 개개인의 리서치한 결과를 다음주 중에 있을 세미나를 준비하시오.**
 <br/><br/>
