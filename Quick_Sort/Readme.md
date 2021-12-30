@@ -14,7 +14,7 @@
   - 분활 정복 방법은 대개 순환 호출을 이용하여 구현한다.
 ~~~
 
-## 4) 퀵정렬(quick_sort) 과정?
+## 3) 퀵정렬(quick_sort) 과정?
 ~~~
   1) 리스트 안에 있는 한 요소를 선택한다. 이렇게 고른 원소를 피벗(pivot) 이라고 한다.
   
@@ -30,7 +30,7 @@
 ~~~
 <img src= "https://user-images.githubusercontent.com/89181586/147576062-5d39cf08-bc59-4516-882f-8d019e985bb9.PNG" width="500" height="300"/>
 
-## 5) 퀵정렬(quick_sort) 장단점?
+## 4) 퀵정렬(quick_sort) 장단점?
 ~~~
   * 장점
     1. 속도가 빠르다.
