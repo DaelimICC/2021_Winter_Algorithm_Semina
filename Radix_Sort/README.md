@@ -79,10 +79,14 @@ variable_Array = [’badge’ ,’bag’, ‘banner', ‘midnight’, ‘wander'
 마지막으로 RADIX SORT 의 방식의 GIf를 보며 마치겠습니다.
 
 #LSD 방식
-![screenshot](./Radix Sort_Tasty_Programmer_image/Radix_Sort_MSD.gif)
+![hlfsiC](https://user-images.githubusercontent.com/47372381/147729952-6c17c59a-4d09-4b3a-875e-6a32401a0f95.gif)
+
 
 #MSD 방식
-![screenshot](./Radix Sort_Tasty_Programmer_image/Radix_Sort_MSD.gif)
+
+
+https://user-images.githubusercontent.com/47372381/147729946-7932eea9-5b36-4953-b7de-4ef242f83a74.mp4
+
 
                                                                   
 
