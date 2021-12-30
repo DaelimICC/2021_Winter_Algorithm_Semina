@@ -78,14 +78,17 @@ variable_Array = [’badge’ ,’bag’, ‘banner', ‘midnight’, ‘wander'
 
 마지막으로 RADIX SORT 의 방식의 GIf를 보며 마치겠습니다.
 
-#LSD 방식
-![hlfsiC](https://user-images.githubusercontent.com/47372381/147729952-6c17c59a-4d09-4b3a-875e-6a32401a0f95.gif)
+# LSD 방식
+
+![Radix_Sort_LSD](https://user-images.githubusercontent.com/47372381/147730008-b5c8337d-a867-4fb1-a891-c2d18c109267.gif)
 
 
-#MSD 방식
+# MSD 방식
+
+![hlfsiC](https://user-images.githubusercontent.com/47372381/147729994-d183c93e-8664-41f0-8f5d-af2683a4e1a2.gif)
 
 
-https://user-images.githubusercontent.com/47372381/147729946-7932eea9-5b36-4953-b7de-4ef242f83a74.mp4
+
 
 
                                                                   
