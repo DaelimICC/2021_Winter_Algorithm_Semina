@@ -70,7 +70,8 @@ variable_Array = [’badge’ ,’bag’, ‘banner', ‘midnight’, ‘wander'
 정렬 후 의 모습이다. 대략적으로 b라는 값이 주어져 정렬이 점진적으로 완성되어지기 때문에 마지막까지 비교하지 않아도 되는 모습을 볼수있습니다.
 이것은 성능적인 이점으로 다가옵니다.
 
-- [ ]  MSD의 정렬 방식은 잘 이해를 하기 어려운 부분이있어 부연 설명은  다음 Writter 에게 MSD를 맡깁니다..
+- [ ]  MSD의 정렬 방식은 잘 이해를 하기 어려운 부분이있어 부연 설명은  다음 Writter 에게 MSD를 맡깁니다..  
+[2차 부연 설명](https://github.com/Hod0ri/Algorithm_Semina/blob/main/Radix_Sort/Additional_Description.md)
 
 마지막으로 RADIX SORT 의 방식의 GIf를 보며 마치겠습니다.
 
