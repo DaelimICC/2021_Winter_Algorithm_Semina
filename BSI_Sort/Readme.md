@@ -25,6 +25,34 @@ void bubbleSort(int[] arr) {
 }
 //출처 : https://gyoogle.dev/blog/algorithm/Bubble%20Sort.html
 ```
+## Bubble Sort C langage Code
+```C
+#include <stdio.h>
+
+void bubbleSort(int arr[],int length)
+{
+  int temp = 0;
+  for(int i=0;i<length;i++){
+    for(int j = 1;j <length-i;j++){
+      if (arr[j-1] > arr[j]) {
+        temp = arr[j-1];
+        arr[j-1] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+  for(int i = 0;i<length;i++){
+    printf("%d ",arr[i]);
+  }
+}
+int main() {
+  int arr[10] = {1,9,8,7,6,4,3,5,2,10};
+  bubbleSort(arr,10);
+  return 0;
+}
+gif 출처 : 
+``` 
+
 1. 제외될 원소의 갯수를 의미한다. 1회전이 끝난 후 배열의 마지막 위치에는 가장 큰<br>
    원소가 위치하기 때문에 하나씩 증가시켜준다.<br>
    
