@@ -11,9 +11,9 @@
 ```java
 void bubbleSort(int[] arr) {
     int temp = 0;
-	for(int i = 0; i < arr.length; i++) {       // 1.
-		for(int j= 1 ; j < arr.length-i; j++) { // 2.
-			if(arr[j-1] > arr[j]) {             // 3.
+	for(int i = 0; i < arr.length; i++) {       // 1. 인덱스 처음부터 끝까지 비교하기 위해 반복문 선언
+		for(int j= 1 ; j < arr.length-i; j++) { // 2. 비교할 j 변수로 arr[j-1]번째와 arr[j]번째를 비교 반복문
+			if(arr[j-1] > arr[j]) {             // 3. 앞 뒤 데이터를 비교하여 앞에 데이터가 더 크면 swap
                 // swap(arr[j-1], arr[j])
 				temp = arr[j-1];
 				arr[j-1] = arr[j];
@@ -21,7 +21,7 @@ void bubbleSort(int[] arr) {
 			}
 		}
 	}
-	System.out.println(Arrays.toString(arr));
+	System.out.println(Arrays.toString(arr)); // 4. 배열 출력
 }
 //출처 : https://gyoogle.dev/blog/algorithm/Bubble%20Sort.html
 ```
@@ -81,19 +81,19 @@ S(n) = O(n)
 ```java
 void selectionSort(int[] arr) {
     int indexMin, temp;
-    for (int i = 0; i < arr.length-1; i++) {        // 1.
-        indexMin = i;
-        for (int j = i + 1; j < arr.length; j++) {  // 2.
-            if (arr[j] < arr[indexMin]) {           // 3.
-                indexMin = j;
+    for (int i = 0; i < arr.length-1; i++) {        // 1. 인덱스르 비교하기 위한 반복문
+        indexMin = i; // 가장 작은 인덱스 값을 담은 변수
+        for (int j = i + 1; j < arr.length; j++) {  // 2. arr[indexMin] 에 비교할 변수 j를 잡고 arr[j] 
+            if (arr[j] < arr[indexMin]) {           // 3. 만약에 비교하는 데이터중 제일 작은 데이터가 나오면
+                indexMin = j; // 그 데이터를 가장 작은 인덱스의 데이터로 할당
             }
         }
         // 4. swap(arr[indexMin], arr[i])
-        temp = arr[indexMin];
+        temp = arr[indexMin]; // 가장 작은 데이터와 i번째 데이터
         arr[indexMin] = arr[i];
         arr[i] = temp;
   }
-  System.out.println(Arrays.toString(arr));
+  System.out.println(Arrays.toString(arr)); // 배열 출력
 }
 //출처 : https://gyoogle.dev/blog/algorithm/Selection%20Sort.html
 ```
@@ -158,16 +158,16 @@ S(n) = O(n)
 ```java
 void insertionSort(int[] arr)
 {
-   for(int index = 1 ; index < arr.length ; index++){ // 1.
-      int temp = arr[index];
-      int prev = index - 1;
-      while( (prev >= 0) && (arr[prev] > temp) ) {    // 2.
-         arr[prev+1] = arr[prev];
-         prev--;
+   for(int index = 1 ; index < arr.length ; index++){ // 1. 비교하기 위한 반복문
+      int temp = arr[index]; // temp 변수에 바꿀값
+      int prev = index - 1; // prev에 바꾸기 전 인덱스 번호
+      while( (prev >= 0) && (arr[prev] > temp) ) {    // 2. 범위를 벗어나지 않게 설정해주고 arr[prev]가 더클때 반복
+         arr[prev+1] = arr[prev]; // 값을 뒤로 밀어버리고
+         prev--; // 비교 인덱스를 앞으로 땡긴다.
       }
-      arr[prev + 1] = temp;                           // 3.
+      arr[prev + 1] = temp;                           // 3. 반복문에서 나오면 작은 값을 prev 앞에 대입
    }
-   System.out.println(Arrays.toString(arr));
+   System.out.println(Arrays.toString(arr)); //배열 
 }
 //출처 : https://gyoogle.dev/blog/algorithm/Insertion%20Sort.html
 ```
