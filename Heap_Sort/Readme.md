@@ -1,5 +1,6 @@
 # Heap Sort
 1st Writter : pdhyeong
+2nd Writter : NightRabbits
 
 ## 힙 정렬(Heap Sort) 이란?
 ~~~
@@ -135,3 +136,16 @@ int main(void)
 https://d2.naver.com/helloworld/0315536
 
 ## Heap Sort의 장점과 단점
+<장점>
+~~~
+- 항상 O(NlogN)의 시간 복잡도를 가지므로 시간 복잡도가 O(NlogN)인 정렬 방법 중, 가장 효율적이다. 
+- 정렬하고자 하는 배열 안에서 교환이 이루어지는 방식이므로, 다른 메모리 공간을 필요로 하지 않는다.(제자리 정렬)
+~~~
+
+<단점>
+~~~
+- 이상적인 경우에 퀵정렬과 비교해서 똑같이 O(NlogN)이 나오나, 실제 시간을 측정해 보면 퀵 정렬 보다 느리다.
+- 안정성을 보장받지 못한다.
+- 불안정 정렬(Unstable Sort)이다.
+~~~
+
