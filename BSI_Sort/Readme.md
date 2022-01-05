@@ -238,3 +238,11 @@ S(n) = O(n)
 ## 3-5. Insertion Sort의 GIF
 ![ex_screenshot](./img/insertion-sort.gif)
 * 사진 출처 :https://gyoogle.dev/blog/algorithm/Insertion%20Sort.html
+
+
+## 시간복잡도 비교
+![ex_screenshot](./img/sort-time-complexity.png)
+- 정렬 알고리즘 마다 시간 복잡도를 비교한 사진
+- 접근적 표기법으로 나타낸 것
+- 삽입정렬과, 버블정렬은 안정정렬이다, 선택 정렬은 불안정정렬이다.
+사진 출처 : https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html
