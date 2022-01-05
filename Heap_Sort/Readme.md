@@ -1,5 +1,6 @@
 # Heap Sort
 1st Writter : pdhyeong
+2nd Writter : NightRabbits
 
 ## 힙 정렬(Heap Sort) 이란?
 ~~~
@@ -134,4 +135,80 @@ int main(void)
 사진 출처 : https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-%ED%9E%99%EC%A0%95%EB%A0%ACHeap-Sort,
 https://d2.naver.com/helloworld/0315536
 
-## Heap Sort의 장점과 단점
+## Heap Sort Java Code
+```java
+private void solve() {                                    
+    int[] array = { 230, 10, 60, 550, 40, 220, 20 };
+ 
+    heapSort(array);
+ 
+    for (int v : array) {
+        System.out.println(v);
+    }
+}
+ 
+public static void heapify(int array[], int n, int i) {  // 2nd heapify
+    int p = i;
+    int l = i * 2 + 1;
+    int r = i * 2 + 2;
+    
+    //왼쪽 자식노드
+    if (l < n && array[p] < array[l]) {
+        p = l;
+    }
+    
+    //오른쪽 자식노드
+    if (r < n && array[p] < array[r]) {
+        p = r;
+    }
+    
+    //부모노드 < 자식노드
+    if (i != p) {
+        swap(array, p, i);
+        heapify(array, n, p);
+    }
+}
+ 
+public static void heapSort(int[] array) {   // 1st heapify
+    int n = array.length;
+ 
+    // max heap 초기화
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        heapify(array, n, i);
+    }
+ 
+    // extract 연산 
+    for (int i = n - 1; i > 0; i--) {
+        swap(array, 0, i);
+        heapify(array, i, 0);
+    }
+}
+ 
+public static void swap(int[] array, int a, int b) {
+    int temp = array[a];
+    array[a] = array[b];
+    array[b] = temp;
+}
+//출처 : https://gyoogle.dev/blog/algorithm/Heap%20Sort.html
+```
+1. 일반 배열을 힙으로 구성하는 역할이다. 자식 노드로부터 부모 노드를 비교한다.<br>
+   n/2-1부터 0까지 인덱스가 도는 이유는 부모 노드의 인덱스를 기준으로 왼쪽 자식노드(i2+1), 오른쪽 자식 노드(i2+2)이기 때문.<br>
+   
+2. 요소가 하나 제거된 이후에 다시 최대 힙을 구성하기 위한 역할이다.<br>
+   루트를 기준으로 진행되며, 다시 최대 힙을 구성할 때 까지 부모 노드와 자식 노드를 swap하며 재귀가 진행됨.
+   
+   ## Heap Sort의 장점과 단점
+<장점>
+~~~
+- 항상 O(NlogN)의 시간 복잡도를 가지므로 시간 복잡도가 O(NlogN)인 정렬 방법 중, 가장 효율적이다. 
+- 정렬하고자 하는 배열 안에서 교환이 이루어지는 방식이므로, 다른 메모리 공간을 필요로 하지 않는다.(제자리 정렬)
+~~~
+
+<단점>
+~~~
+- 이상적인 경우에 퀵정렬과 비교해서 똑같이 O(NlogN)이 나오나, 실제 시간을 측정해 보면 퀵 정렬 보다 느리다.
+- 안정성을 보장받지 못한다.
+- 불안정 정렬(Unstable Sort)이다.
+~~~
+
+   

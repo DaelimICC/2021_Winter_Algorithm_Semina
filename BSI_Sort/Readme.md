@@ -25,6 +25,7 @@ void bubbleSort(int[] arr) {
 }
 //출처 : https://gyoogle.dev/blog/algorithm/Bubble%20Sort.html
 ```
+
 1. 제외될 원소의 갯수를 의미한다. 1회전이 끝난 후 배열의 마지막 위치에는 가장 큰<br>
    원소가 위치하기 때문에 하나씩 증가시켜준다.<br>
    
@@ -66,7 +67,9 @@ S(n) = O(n)
 - 시간 복잡도가 최악, 최선, 평균 모두 O(n^2)으로 굉장히 비효율적이다.
 - 정렬 되어있지 않은 원소가 정렬이 되었을 때의 자리로 가기 위해서 교환 연산이 많이 일어나게 된다.
 ~~~
-
+## 1-5. Bubble Sort의 GIF
+![ex_screenshot](./img/bubble-sort.gif)
+* 사진 출처: https://gyoogle.dev/blog/algorithm/Bubble%20Sort.html
 ## 2-1. Selection Sort의 정의
 ~~~
 - Selection Sort는 Bubble Sort와 유사한 알고리즘으로, 해당 순서에 원소를 넣을 위치는 이미 정해져 있고
@@ -141,7 +144,9 @@ S(n) = O(n)
 - 시간 복잡도가 O(n^2)로 비효율적이다.
 - 불안정 정렬(Unstable Sort)이다.
 ~~~
-
+### 2-5 Selection Sort의 GIF
+![ex_screenshot](./img/selection-sort.gif)
+* 사진 출처 :https://gyoogle.dev/blog/algorithm/Selection%20Sort.html
 ## 3-1. Insertion Sort의 정의
 ~~~
 - Insertion Sort는 2번째 원소부터 시작하여 그 앞의 원소들과 비교하여 삽입 할 위치를 지정한 후,
@@ -230,3 +235,6 @@ S(n) = O(n)
 - 평균과 최악의 시간 복잡도가 O(n^2)으로 비효율적이다.
 - Selection Sort나 Bubble Sort와 마찬가지로 배열의 길이가 길어질 수록 비효율적이다.
 ~~~
+## 3-5. Insertion Sort의 GIF
+![ex_screenshot](./img/insertion-sort.gif)
+* 사진 출처 :https://gyoogle.dev/blog/algorithm/Insertion%20Sort.html
