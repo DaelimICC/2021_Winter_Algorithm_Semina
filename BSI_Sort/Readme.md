@@ -285,6 +285,7 @@ S(n) = O(n)
 출처:
 
 [https://velog.io/@swhan9404/버블정렬-칵테일정렬-빗질정렬](https://velog.io/@swhan9404/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC-%EC%B9%B5%ED%85%8C%EC%9D%BC%EC%A0%95%EB%A0%AC-%EB%B9%97%EC%A7%88%EC%A0%95%EB%A0%AC)
+
 [https://ko.wikipedia.org/wiki/선택_정렬#다양한_개선_방법](https://ko.wikipedia.org/wiki/%EC%84%A0%ED%83%9D_%EC%A0%95%EB%A0%AC#%EB%8B%A4%EC%96%91%ED%95%9C_%EA%B0%9C%EC%84%A0_%EB%B0%A9%EB%B2%95)
 
 [https://st-lab.tistory.com/262](https://st-lab.tistory.com/262)
