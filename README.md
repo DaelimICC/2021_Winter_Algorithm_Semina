@@ -18,15 +18,25 @@
 
 <br/>
 
-### 주제 1 (2021.12.22 ~ )
+### 주제 1 (2021.12.22 ~ 2022.01.13)
 |주제| 1차 담당자| 2차 담당자 | 3차 담당자 |
 |---|-----------------------|---|---|
-|버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)|[pdhyeong](https://github.com/pdhyeong)||
-|퀵 정렬|[Mammom](https://github.com/Mammom)|[MallangMallang](https://github.com/Mallang-Mallang)||
-|병합 정렬|[MallangMallang](https://github.com/Mallang-Mallang)|[Mammom](https://github.com/Mammom)||
-|힙 정렬|[pdhyeong](https://github.com/pdhyeong)|[NightRabbits](https://github.com/NightRabbits)||
-|기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Hod0ri](https://github.com/Hod0ri)||
-|계수 정렬|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)||
+|버블/삽입/선택 정렬|[NightRabbits](https://github.com/NightRabbits)|[pdhyeong](https://github.com/pdhyeong)|[Tasty-Programmer](https://github.com/Tasty-Programmer)|
+|퀵 정렬|[Mammom](https://github.com/Mammom)|[MallangMallang](https://github.com/Mallang-Mallang)|[Hod0ri](https://github.com/Hod0ri)|
+|병합 정렬|[MallangMallang](https://github.com/Mallang-Mallang)|[Mammom](https://github.com/Mammom)|[pdhyeong](https://github.com/pdhyeong)|
+|힙 정렬|[pdhyeong](https://github.com/pdhyeong)|[NightRabbits](https://github.com/NightRabbits)|[MallangMallang](https://github.com/Mallang-Mallang)|
+|기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Hod0ri](https://github.com/Hod0ri)|[NightRabbits](https://github.com/NightRabbits)|
+|계수 정렬|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Mammom](https://github.com/Mammom)|
+
+### 주제 2 (2022.01.13 ~ )
+|주제| 1차 담당자| 2차 담당자 | 3차 담당자 |
+|---|-----------------------|---|---|
+|이분 탐색|||
+|해시테이블 구현|||
+|DFS & BFS|||
+|LIS(최장증가수열)|||
+|LCA(최소공통조상)|||
+|DP(동적계획법)|||
 
 **위 정렬에 대한 개요와 개개인의 리서치한 결과를 다음주 중에 있을 세미나를 준비하시오.**
 <br/><br/>
