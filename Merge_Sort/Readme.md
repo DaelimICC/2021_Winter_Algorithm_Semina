@@ -134,6 +134,7 @@ void main() {
         printf("%d ", list[i]);
     }
 }
+// 코드 출처 : https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html
 ```
 <br>
 
