@@ -27,7 +27,7 @@ public class HeapSort {
         }
 	}
 	
-	```java
+
   public static void heapify(int[] arr, int size, int pNode){
 		
 		int parent = pNode; // 부모노드
