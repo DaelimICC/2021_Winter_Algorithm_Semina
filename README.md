@@ -31,12 +31,12 @@
 ### 주제 2 (2022.01.13 ~ )
 |주제| 1차 담당자| 2차 담당자 | 3차 담당자 |
 |---|-----------------------|---|---|
-|이분 탐색|||
-|해시테이블 구현|||
-|DFS & BFS|||
-|LIS(최장증가수열)|||
-|LCA(최소공통조상)|||
-|DP(동적계획법)|||
+|이분 탐색|[Tasty-Programmer](https://github.com/Tasty-Programmer)||
+|해시테이블 구현|[Mammom](https://github.com/Mammom)||
+|DFS|[pdhyeong](https://github.com/pdhyeong)||
+|BFS|[NightRabbits](https://github.com/NightRabbits)||
+|LIS(최장증가수열)|[Hod0ri](https://github.com/Hod0ri)||
+|LCA(최소공통조상)|[MallangMallang](https://github.com/Mallang-Mallang)||
 
 **위 정렬에 대한 개요와 개개인의 리서치한 결과를 다음주 중에 있을 세미나를 준비하시오.**
 <br/><br/>
