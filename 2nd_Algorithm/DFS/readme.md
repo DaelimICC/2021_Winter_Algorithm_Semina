@@ -47,6 +47,8 @@ V2에 인접해 있는 노드 중 아직 탐색하지 않는 노드 V3을 방문
 
 
 ~~~
-  
+
+## Output
+
 사진 출처 : https://pangtrue.tistory.com/147, https://blog.hexabrain.net/268
 내용참고 : https://yunyoung1819.tistory.com/86
