@@ -74,4 +74,3 @@ key,Value로 저장하는 익숙한 자료구조인 Hash Map이 있다. 해시�
 index = hash_function("John Smith") % 16 연산을 통해 index 값을 계산한다. 
 그리고 array[index] = "521-1234" 로 전화번호를 저장하게 된다.
 ~~~
-## 코드
