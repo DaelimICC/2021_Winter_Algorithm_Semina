@@ -24,7 +24,12 @@
 + DFS는 스택과 재귀함수를 이용해 표현할 수있다.
 
 ~~~
-https://media.vlpt.us/images/polynomeer/post/526696b6-e20e-4d16-9214-a88e451fdc1d/2020-03-30_13-23-55.gif
+## DFS 스택에 관한 GIF
+
+<img src= "https://media.vlpt.us/images/polynomeer/post/526696b6-e20e-4d16-9214-a88e451fdc1d/2020-03-30_13-23-55.gif" width="800" height="500"/>
+
+이때 정점 5를 들렸다가 4로 되돌아 가는 과정을 백 트래킹이라고 한다.
+
 
 ## DFS의 표현방법
 인접행렬의 표현:<br>
@@ -53,14 +58,21 @@ https://media.vlpt.us/images/polynomeer/post/526696b6-e20e-4d16-9214-a88e451fdc1
 
 
 ## 장점과 단점
-  장점<br>
-    * 단지 현 경로상의 노드들만을 기억하면 되므로 저장공간의 수요가 비교적 적다.<br>
-    * 목표노드가 깊은 단계에 있을 경우 해를 빨리 구할 수 있다<br>
-  단점<br>
-    * 해가 없는 경로에 깊이 빠질 가능성이 있다. <br>
-    따라서 실제의 경우 미리 지정한 임의의 깊이까지만 탐색하고 목표노드를 발견하지 못하면 다음의 경로르 따라 탐색하는 방법이 유용<br>
-    * 얻어진 해가 최단 경로가 된다는 보장이 없다. <br>
-    이는 목표에 이르는 경로가 다수인 문제에 대해 깊이우선탐색은 해에 다다르면 탐색을 끝내버리므로, 이때 얻어진 해는 최적의 해가 아닐수 있다.<br>
+  장점
+  
+    * 단지 현 경로상의 노드들만을 기억하면 되므로 저장공간의 수요가 비교적 적다.
+    
+    * 목표노드가 깊은 단계에 있을 경우 해를 빨리 구할 수 있다.
+    
+  단점
+    
+    * 해가 없는 경로에 깊이 빠질 가능성이 있다. 
+    
+        따라서 실제의 경우 미리 지정한 임의의 깊이까지만 탐색하고 목표노드를 발견하지 못하면 다음의 경로르 따라 탐색하는 방법이 유용
+        
+    * 얻어진 해가 최단 경로가 된다는 보장이 없다. 
+    
+        이는 목표에 이르는 경로가 다수인 문제에 대해 깊이우선탐색은 해에 다다르면 탐색을 끝내버리므로, 이때 얻어진 해는 최적의 해가 아닐수 있다.<br>
   
 ## DFS Java Code
 ~~~ java
@@ -71,8 +83,8 @@ https://media.vlpt.us/images/polynomeer/post/526696b6-e20e-4d16-9214-a88e451fdc1
 ## Output
 
 
-
 사진 , 내용 출처 : https://pangtrue.tistory.com/147, <br>
 https://blog.hexabrain.net/268,<br>
 https://nobilitycat.tistory.com/entry/%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89-DFS-%EC%9D%B8%EC%A0%91-%ED%96%89%EB%A0%AC-%EC%9D%B8%EC%A0%91-%EB%A6%AC%EC%8A%A4%ED%8A%B8
  https://yunyoung1819.tistory.com/86
+ https://velog.io/@polynomeer/%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89DFS
