@@ -43,7 +43,7 @@ class Graph {
 		LinkedList<Node> adjacent;
 		boolean marked;
 		Node (int data) {
-			this.data =data;
+			this.data = data;
 			this.marked = false;
 			adjacent = new LinkedList<Node>();
 			
@@ -52,7 +52,7 @@ class Graph {
 	Node[] nodes;
 	Graph(int size) {
 		nodes = new Node[size];
-		for(int i = 0 ;i< size; i++) {
+		for(int i = 0 ; i< size; i++) {
 			nodes[i] = new Node(i);
 		}
 	}
@@ -126,7 +126,7 @@ public class DFS {
 ~~~
 ## Output
 
-
+![ex_screenshot](./img/result.png)
 
 ## DFS의 표현방법
 인접행렬의 표현:<br>
