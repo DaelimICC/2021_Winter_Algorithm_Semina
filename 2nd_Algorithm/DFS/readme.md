@@ -40,25 +40,25 @@ import java.util.NoSuchElementException;
 class Graph {
 	class Node {
 		int data;
-		LinkedList<Node> adjacent;
-		boolean marked;
-		Node (int data) {
+		LinkedList<Node> adjacent; // 인접노드
+		boolean marked; // 방문확인 변수
+		Node (int data) { //노드 초기화
 			this.data = data;
 			this.marked = false;
 			adjacent = new LinkedList<Node>();
-			
 		}
 	}
-	Node[] nodes;
-	Graph(int size) {
+	Node[] nodes; // 노드 저장할 배열
+	Graph(int size) { // 노드 수 고정
 		nodes = new Node[size];
 		for(int i = 0 ; i< size; i++) {
 			nodes[i] = new Node(i);
 		}
 	}
-	void addEdge(int i1,int i2) {
+	void addEdge(int i1,int i2) {// 노드 관계저장 즉 간선 추가
 		Node n1 = nodes[i1];
 		Node n2 = nodes[i2];
+		// 서로 간선에 데이터있는지 확인하고 없으면 add(추가)
 		if(!n1.adjacent.contains(n2)) {
 			n1.adjacent.add(n2);
 		}
@@ -66,17 +66,17 @@ class Graph {
 			n2.adjacent.add(n1);
 		}
 	}
-	void dfs() {
-		dfs(0);
+	void dfs() { // 그냥 실행하면 인자값 1로 시작
+		dfs(1);
 	}
 	void dfs(int index) {
-		Node root = nodes[index];
-		Stack<Node> stack = new Stack<Node>();
-		stack.push(root);
-		root.marked = true;
-		while(!stack.isEmpty()) {
-			Node r = stack.pop();
-			for(Node n : r.adjacent) {
+		Node root = nodes[index]; // 인자값을 노드로 가져오고
+		Stack<Node> stack = new Stack<Node>(); //스택 생성
+		stack.push(root); 
+		root.marked = true; // 방문 확인 체크
+		while(!stack.isEmpty()) { 
+			Node r = stack.pop(); // 스택 맨위에 노드값
+			for(Node n : r.adjacent) { // 가져온 노드의 자식을 스택에 추가
 				if(n.marked == false) {
 					n.marked = true;
 					stack.push(n);
@@ -104,14 +104,14 @@ class Graph {
 		System.out.print(n.data + " ");
 	}
 	void dfsR() {
-		dfsR(0);
+		dfsR(1);
 	}
 }
 
 public class DFS {
 
 	public static void main(String[] args) {
-		Graph g = new Graph(9);
+		Graph g = new Graph(7);
 		g.addEdge(1, 2);
 		g.addEdge(1, 5);
 		g.addEdge(2, 3);
