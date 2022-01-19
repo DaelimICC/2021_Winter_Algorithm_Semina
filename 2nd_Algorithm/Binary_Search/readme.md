@@ -73,7 +73,7 @@ mid = (low+high)/2
 
 반드시 정렬된 리스트를 필요로 하는 알고리즘 입니다.
 
-![binary-and-linear-search-animations.gif](Binary_Search%20e466ec050c944187871b1943c7becb07/binary-and-linear-search-animations.gif)
+![binary-and-linear-search-animations.gif](2nd_Algorithm/Binary_Search/binary-and-linear-search-animations.gif)
 
 길어지는 시간과 다음 작성자를 위해 이진탐색트리는 남겨두도록 하겠습니다! 이진 탐색 트리에 대하여 설명 해주셨으면 합니다!
 
