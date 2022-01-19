@@ -87,24 +87,24 @@ class Graph {
 		
 	}
 	void dfsR(Node r) {
-		if(r==null) return;
-		r.marked = true;
-		visit(r);
-		for(Node n : r.adjacent) {
+		if(r==null) return; 
+		r.marked = true; // 호출 체크
+		visit(r); // 데이터 출력
+		for(Node n : r.adjacent) { // 호출되지않은 자식 호출
 			if(n.marked == false) {
 				dfsR(n);
 			}
 		}
 	}
 	void dfsR(int index) {
-		Node r = nodes[index];
+		Node r = nodes[index]; // 인덱스 값을 넣으면 인덱스 데이터를 기점으로 재귀호출
 		dfsR(r);
-	}
-	void visit(Node n) {
-		System.out.print(n.data + " ");
 	}
 	void dfsR() {
 		dfsR(1);
+	}
+	void visit(Node n) {
+		System.out.print(n.data + " ");
 	}
 }
 
