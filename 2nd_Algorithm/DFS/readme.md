@@ -17,14 +17,18 @@ V2에 인접해 있는 노드 중 아직 탐색하지 않는 노드 V3을 방문
 ~~~
 ## DFS의 표현방법
 인접행렬의 표현:<br>
-
-* 인접행렬의 시간복잡도
-
+![ex_screenshot](./img/adjArray.png)
+* 인접행렬의 시간복잡도 와 공간복잡도 장단점:
+    장점 : 비교적 리스트보다 구현이 간단하고 연결을 확인하는 시간복잡도가 O(1) 이다.
+    
+    단점 : 노드가 많고 간선이 적을때 비효율적이고 공간복잡도를 O(n^2) 메모리를 차지.
 인접리스트의 표현:
-
-* 인접리스트의 시간복잡도
-
-
+![ex_screenshot](./img/adlist.png)
+* 인접리스트의 시간복잡도 와 공간복잡도 장단점
+    <br>장점 : 최악의 경우 시간복잡도가 O(n)이지만 대부분 인접행렬보다 빠르다.
+           공간 복잡도도 최악을 제외하면 O(E)이므로 인접행렬의 공간복잡도인 O(n^2)보다 효율적이다.
+    단점:  맞는 노드를 순회 해야하므로 시간 복잡도가 O(n)이다.
+    
 ## DFS의 특징
 1. 미로를 한 방향으로 갈 수 있을때 까지 탐색하는 것과 비슷함. 막히면 뒤로 돌아와서 다른 방향 탐색하는 것
 2. 모든 노드를 방문하고자 할 때 사용
@@ -50,5 +54,7 @@ V2에 인접해 있는 노드 중 아직 탐색하지 않는 노드 V3을 방문
 
 ## Output
 
-사진 출처 : https://pangtrue.tistory.com/147, https://blog.hexabrain.net/268
+사진 출처 : https://pangtrue.tistory.com/147, <br>
+https://blog.hexabrain.net/268,<br>
+https://nobilitycat.tistory.com/entry/%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89-DFS-%EC%9D%B8%EC%A0%91-%ED%96%89%EB%A0%AC-%EC%9D%B8%EC%A0%91-%EB%A6%AC%EC%8A%A4%ED%8A%B8
 내용참고 : https://yunyoung1819.tistory.com/86
