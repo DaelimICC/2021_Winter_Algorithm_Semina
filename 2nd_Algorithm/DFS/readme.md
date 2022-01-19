@@ -88,6 +88,7 @@ class Graph {
 	}
 	void dfsR(Node r) {
 		if(r==null) return;
+		r.marked = true;
 		visit(r);
 		for(Node n : r.adjacent) {
 			if(n.marked == false) {
