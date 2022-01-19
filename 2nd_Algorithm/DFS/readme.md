@@ -118,7 +118,8 @@ public class DFS {
 		g.addEdge(3, 4);
 		g.addEdge(4, 5);
 		g.addEdge(4, 6);
-		g.dfs(1);
+		//g.dfs(1); 스택을 사용한 dfs
+		g.dfsR(1); // 재귀적 표현을 사용한 dfs
 	}
 }
 
@@ -126,7 +127,11 @@ public class DFS {
 ~~~
 ## Output
 
+스택 사용 <br>
 ![ex_screenshot](./img/result.png)
+
+재귀 사용 <br>
+!
 
 ## DFS의 표현방법
 인접행렬의 표현:<br>
