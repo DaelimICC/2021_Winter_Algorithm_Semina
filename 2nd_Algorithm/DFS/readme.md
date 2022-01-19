@@ -24,7 +24,7 @@
 + DFS는 스택과 재귀함수를 이용해 표현할 수있다.
 
 ~~~
-
+https://media.vlpt.us/images/polynomeer/post/526696b6-e20e-4d16-9214-a88e451fdc1d/2020-03-30_13-23-55.gif
 
 ## DFS의 표현방법
 인접행렬의 표현:<br>
