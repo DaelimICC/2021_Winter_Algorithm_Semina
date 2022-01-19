@@ -131,7 +131,7 @@ public class DFS {
 ![ex_screenshot](./img/result.png)
 
 재귀 사용 <br>
-!
+![ex_screenshot](./img/resultR.png)
 
 ## DFS의 표현방법
 인접행렬의 표현:<br>
