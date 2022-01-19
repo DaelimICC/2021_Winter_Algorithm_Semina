@@ -30,6 +30,103 @@
 
 이때 정점 5를 들렸다가 4로 되돌아 가는 과정을 백 트래킹이라고 한다.
 
+## DFS Java Code
+~~~ java
+import java.util.LinkedList;
+import java.util.Iterator;
+import java.util.Stack;
+import java.util.NoSuchElementException;
+
+class Graph {
+	class Node {
+		int data;
+		LinkedList<Node> adjacent;
+		boolean marked;
+		Node (int data) {
+			this.data =data;
+			this.marked = false;
+			adjacent = new LinkedList<Node>();
+			
+		}
+	}
+	Node[] nodes;
+	Graph(int size) {
+		nodes = new Node[size];
+		for(int i = 0 ;i< size; i++) {
+			nodes[i] = new Node(i);
+		}
+	}
+	void addEdge(int i1,int i2) {
+		Node n1 = nodes[i1];
+		Node n2 = nodes[i2];
+		if(!n1.adjacent.contains(n2)) {
+			n1.adjacent.add(n2);
+		}
+		if(!n2.adjacent.contains(n1)) {
+			n2.adjacent.add(n1);
+		}
+	}
+	void dfs() {
+		dfs(0);
+	}
+	void dfs(int index) {
+		Node root = nodes[index];
+		Stack<Node> stack = new Stack<Node>();
+		stack.push(root);
+		root.marked = true;
+		while(!stack.isEmpty()) {
+			Node r = stack.pop();
+			for(Node n : r.adjacent) {
+				if(n.marked == false) {
+					n.marked = true;
+					stack.push(n);
+				}
+			}
+			visit(r);
+		}
+		
+	}
+	void dfsR(Node r) {
+		if(r==null) return;
+		visit(r);
+		for(Node n : r.adjacent) {
+			if(n.marked == false) {
+				dfsR(n);
+			}
+		}
+	}
+	void dfsR(int index) {
+		Node r = nodes[index];
+		dfsR(r);
+	}
+	void visit(Node n) {
+		System.out.print(n.data + " ");
+	}
+	void dfsR() {
+		dfsR(0);
+	}
+}
+
+public class DFS {
+
+	public static void main(String[] args) {
+		Graph g = new Graph(9);
+		g.addEdge(1, 2);
+		g.addEdge(1, 5);
+		g.addEdge(2, 3);
+		g.addEdge(2, 5);
+		g.addEdge(3, 4);
+		g.addEdge(4, 5);
+		g.addEdge(4, 6);
+		g.dfs(1);
+	}
+}
+
+
+~~~
+## Output
+
+
 
 ## DFS의 표현방법
 인접행렬의 표현:<br>
@@ -74,13 +171,7 @@
     
         이는 목표에 이르는 경로가 다수인 문제에 대해 깊이우선탐색은 해에 다다르면 탐색을 끝내버리므로, 이때 얻어진 해는 최적의 해가 아닐수 있다.<br>
   
-## DFS Java Code
-~~~ java
 
-
-~~~
-
-## Output
 
 
 사진 , 내용 출처 : https://pangtrue.tistory.com/147, <br>
@@ -88,3 +179,4 @@ https://blog.hexabrain.net/268,<br>
 https://nobilitycat.tistory.com/entry/%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89-DFS-%EC%9D%B8%EC%A0%91-%ED%96%89%EB%A0%AC-%EC%9D%B8%EC%A0%91-%EB%A6%AC%EC%8A%A4%ED%8A%B8
  https://yunyoung1819.tistory.com/86
  https://velog.io/@polynomeer/%EA%B9%8A%EC%9D%B4-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89DFS
+ https://www.youtube.com/watch?v=_hxFgg7TLZQ&list=PLjSkJdbr_gFY8VgactUs6_Jc9Ke8cPzZP&index=6
