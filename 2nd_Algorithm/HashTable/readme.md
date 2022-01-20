@@ -79,7 +79,7 @@ index = hash_function("John Smith") % 16 연산을 통해 index 값을 계산한
 
 <img src= "https://user-images.githubusercontent.com/89181586/150068114-7832203b-5826-4982-b5c7-7c886d6cc077.png" width="800" height="500"/>
 
-##
+## 출처
 [해시 개념](https://go-coding.tistory.com/30/) / 
 [해시 테이블](https://mangkyu.tistory.com/102) / 
 [백준](https://www.acmicpc.net/problem/1920)
