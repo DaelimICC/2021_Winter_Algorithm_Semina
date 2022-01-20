@@ -81,4 +81,5 @@ index = hash_function("John Smith") % 16 연산을 통해 index 값을 계산한
 
 ##
 [해시 개념](https://go-coding.tistory.com/30/) / 
-[해시 테이블](https://mangkyu.tistory.com/102)
+[해시 테이블](https://mangkyu.tistory.com/102) / 
+[백준](https://www.acmicpc.net/problem/1920)
