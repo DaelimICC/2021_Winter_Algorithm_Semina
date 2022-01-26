@@ -177,6 +177,98 @@ public class DFS {
     
         이는 목표에 이르는 경로가 다수인 문제에 대해 깊이우선탐색은 해에 다다르면 탐색을 끝내버리므로, 이때 얻어진 해는 최적의 해가 아닐수 있다.
   
+## DFS 백준 문제
+
+![image](https://user-images.githubusercontent.com/92222661/151159163-662109ef-020a-4451-b97e-a39fb36bbf96.png)
+
+## 정답코드 for Java
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class main {
+    static int nV; // 정점의 수
+    static int nE; // 간선의 수
+    static int [][] arr2d;
+    //간선간의 위치를 저장할 2차원 배열
+    static boolean [] checkDFS;
+    static boolean [] checkBFS;
+    //방문정점을 체크할 배열 두개 사용하기 때문에 두개 선언
+
+    // dfs 정렬 메서드
+    static void dfs(int i) {
+        System.out.print(i + " ");
+        //방문한 정점 출력
+        checkDFS[i] = true;
+        //해당 정점 방문했으니까 체크;
+
+        for(int j = 1; j < nV + 1; j++) {
+            if(arr2d[i][j] == 1 && checkDFS[j] == false) {
+                // 정점사이 간선이 연결되어 있고 다음에 방문할
+                // 정점이 미방문 정점이라면 다음 깊이를 탐색
+                dfs(j);
+            }
+        }
+    }
+
+    //	bfs 정렬 메서드
+    static void bfs(int i) {
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(i);
+
+        while(!q.isEmpty()) {
+            int temp = q.poll();
+            //loop를 들면서 큐에 들을 정점을 순서대로 하나씩 추출함
+            // 선입 선출을 법칙
+            System.out.print(temp + " ");
+            checkBFS[temp] = true;
+            //해당 정점 방문했으니까 체크;
+
+            for(int j = 1; j < nV + 1; j++) {
+                if(arr2d[temp][j] == 1 && checkBFS[j] == false) {
+                    q.offer(j);
+                    // 인접한 정점이 있으면 큐에 넣어줌
+                    checkBFS[j] = true;
+                    //해당 정점 방문했으니까 체크;
+                }
+            }
+        }
+    }
+    //////////////////////////////////////////////////////////
+    // 메인메서드 시작 - > 실행 영역
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        nV = scan.nextInt();
+        nE = scan.nextInt();
+        int start = scan.nextInt();
+        arr2d = new int [nV + 1][nV + 1];
+        checkDFS = new boolean [nV + 1];
+        checkBFS = new boolean [nV + 1];
+        // 0부터 시작이 아닌 1부터 체크하기 때문에 모두 +1을 해준다.
+
+        for(int i = 0; i < nE; i++) {
+            int temp1 = scan.nextInt();
+            int temp2 = scan.nextInt();
+
+            arr2d[temp1][temp2] = arr2d[temp2][temp1] = 1;
+            // 간선은 양방향 이기 때문에 두 배열위치모두 같이 변경해야한다.
+        }
+
+        dfs(start);
+        System.out.println();
+        bfs(start);
+
+
+    }
+}
+
+```
+## 실행화면
+![image](https://user-images.githubusercontent.com/92222661/151159579-1cf9dde7-bbc4-42c8-aca1-b2a9ba15039b.png)
+
 
 
 
