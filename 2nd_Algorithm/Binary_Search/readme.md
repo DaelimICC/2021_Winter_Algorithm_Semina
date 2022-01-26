@@ -76,6 +76,107 @@ mid = (low+high)/2
 ![binary-and-linear-search-animations.gif](https://user-images.githubusercontent.com/47372381/150161771-35680c05-1816-4442-90e7-97dc45344f27.gif)
 
 길어지는 시간과 다음 작성자를 위해 이진탐색트리는 남겨두도록 하겠습니다! 이진 탐색 트리에 대하여 설명 해주셨으면 합니다!
+## 이진탐색 문제 예시
+백준 문제 1920
+N개의 정수 A[1], A[2], …, A[N]이 주어져 있을 때, 이 안에 X라는 정수가 존재하는지 알아내는 프로그램을 작성하시오.
+
+입력
+첫째 줄에 자연수 N(1 ≤ N ≤ 100,000)이 주어진다. 다음 줄에는 N개의 정수 A[1], A[2], …, A[N]이 주어진다. 다음 줄에는 M(1 ≤ M ≤ 100,000)이 주어진다. 다음 줄에는 M개의 수들이 주어지는데, 이 수들이 A안에 존재하는지 알아내면 된다. 모든 정수의 범위는 -231 보다 크거나 같고 231보다 작다.
+
+출력
+M개의 줄에 답을 출력한다. 존재하면 1을, 존재하지 않으면 0을 출력한다.
+
+예제 입력 
+5
+4 1 5 2 3
+5
+1 3 7 9 5
+
+
+예제 출력  
+1
+1
+0
+0
+1
+
+
+### 문제 해결 코드
+~~~C
+#include <stdio.h>
+int arr[100000];
+void quickSort(int arr[], int left, int right)
+{
+    int l = left, r = right;
+    int temp;
+    int pivot = arr[(left + right) / 2];
+
+    while (l <= r)
+    {
+        while (arr[l] < pivot)
+            l++;
+        while (arr[r] > pivot)
+            r--;
+
+        if (l <= r)
+        {
+            if (l != r)
+            {
+                temp = arr[l];
+                arr[l] = arr[r];
+                arr[r] = temp;
+            }
+            l++; r--;
+        }
+    }
+    if (l < right)
+        quickSort(arr, l, right);
+    if (r > left)
+        quickSort(arr, left, r);
+}
+void found(int n, int result) {
+    int st = 0, end = n - 1;
+    int pivot;
+
+    while (st <= end) {
+        pivot = (st + end) / 2;
+
+        if (arr[pivot] == result) {
+            return printf("1 \n");
+        }
+        else if (arr[pivot] > result) {
+            end = pivot - 1;
+        }
+        else {
+            st = pivot + 1;
+        }
+    }
+    printf("0 \n");
+    return;
+}
+int main() {
+    int num,qus,find;
+    scanf_s("%d", &num);
+    for (int i = 0; i < num; i++)
+    {
+        scanf_s("%d", &arr[i]);
+    }
+    quickSort(arr, 0, num - 1);
+    scanf_s("%d", &qus);
+    for (int i = 0; i < qus; i++) {
+        scanf_s("%d", &find);
+        found(num, find);
+    }
+    return 0;
+}
+~~~
+
+문제는 간단하게 n개의 숫자를 나열해서 m개의 숫자를 또 나열했을때 만약 m개의 숫자를 나열한것이 n개안에 있으면 1로 표시하고 아니면 0으로 표시하는 문제
+
+개인적인 생각으로는 굳이 이분탐색을 사용하지 않아도 해결할 수 있을것 같다고 생각했지만 이분 탐색 카테고리에 들어가 있어서 이분탐색을 사용하려고 노력했다.
+
+먼저 n개의 데이터를 넣고 n개 안에 넣은 데이터를 m개 안에 넣은 데이터와 비교하기 위해 먼저 1주차에 배운 퀵정렬을 사용하여 나열하고 그 후 m 안에 넣은
+데이터들을 이분탐색하여 존재하는지를 비교하였다.
 
 ## 이진검색트리
 이진탐색트리란 이진탐색과 연결리스트를 결합한 자료구조의 일종이고 이진탐색의 효율적인 탐새 능력을 유지하면서도,빈번한 자료 입력과 삭제를 가능하게끔 고안되었다.
@@ -87,6 +188,9 @@ mid = (low+high)/2
 * 각 노드의 오른쪽 서브트리에는 해당 노드의 값보다 큰 값을 지닌 노드들로 이루어져 있다.
 * 중복된 노드가 없어야한다.
 * 왼쪽 서브트리, 오른쪽 서브트리 또한 이진탐색이다.
+
+배열로 표현하여 이진탐색트리를 구현할 수 있다. 하지만 추가 삭제가 어려운 경우가 생긴다.
+포인터를 사용해서도 이진트리를 사용하여 이진탐색트리를 구현할 수 있다.
 
 
 ### 배열에 정렬되어있는 데이터를 이진검색 트리로 구현한 코드 
@@ -140,6 +244,10 @@ public class BST {
 
 }
 ~~~
+
+## 포인터를 사용한 이진탐색트리(BST)
+
+
 ### 출처
 
 [https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
