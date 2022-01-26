@@ -78,8 +78,68 @@ mid = (low+high)/2
 길어지는 시간과 다음 작성자를 위해 이진탐색트리는 남겨두도록 하겠습니다! 이진 탐색 트리에 대하여 설명 해주셨으면 합니다!
 
 ## 이진검색트리
+이진탐색트리란 이진탐색과 연결리스트를 결합한 자료구조의 일종이고 이진탐색의 효율적인 탐새 능력을 유지하면서도,빈번한 자료 입력과 삭제를 가능하게끔 고안되었다.
+
+추상적으로 나타내면 다음 그림과 같다.
+<img src= "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbCe3QD%2Fbtq2ytHuN1Z%2FAi82KHYBlgY01j9hbwjOO1%2Fimg.png" width="800" height="500"/>
+
+* 각 노드의 왼족 서브트리에는 해당 노드의 값보다 작은 값을 지닌 노드들로 이루어져 있다.
+* 각 노드의 오른쪽 서브트리에는 해당 노드의 값보다 큰 값을 지닌 노드들로 이루어져 있다.
+* 중복된 노드가 없어야한다.
+* 왼쪽 서브트리, 오른쪽 서브트리 또한 이진탐색이다.
 
 
+### 배열에 정렬되어있는 데이터를 이진검색 트리로 구현한 코드 
+
+~~~java
+class Tree {
+	class Node { 
+		int data;
+		Node left;
+		Node right;
+		Node (int data) {
+			this.data = data;
+		}
+	}
+	Node root;
+	public void makeTree(int [] a) {
+		root = makeTreeR(a,0,a.length-1); 
+	}
+	public Node makeTreeR(int[] a, int start, int end) {
+		if(start > end) return null;
+		int mid = (start + end) / 2; // 중간값 즉 pivot
+		Node node = new Node(a[mid]);
+		node.left = makeTreeR(a,start,mid-1); // 왼쪽 서브트리 범위설정 재귀함수
+		node.right = makeTreeR(a,mid+1,end); // 오른쪽 서브트리 범위설정 재귀함수
+		return node;
+	}
+	public void searchBTree(Node n , int find)
+	{
+		if(find < n.data) {
+			System.out.println("데이터가 "+n.data+ "보다 작다");
+			searchBTree(n.left,find); // 재귀함수 이용
+		}
+		else if(find > n.data) {
+			System.out.println("데이터가 "+n.data+ "보다 더 크다 ");
+			searchBTree(n.right,find); // 재귀함수로 데이터 찾기
+		}
+		else 
+			System.out.println("찾은 데이터 = "+ n.data);
+	}
+}
+public class BST {
+
+	public static void main(String[] args) {
+	int [] arr = {1,12,15,30,60,63,72,84,93,100}; // 배열안에 정렬되어있는 데이터
+
+	
+	Tree t = new Tree();
+	t.makeTree(arr);
+	t.searchBTree(t.root, 72);//72라는 데이터 찾기
+	}
+
+}
+~~~
 ### 출처
 
 [https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
