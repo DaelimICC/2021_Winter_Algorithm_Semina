@@ -41,7 +41,6 @@
 ### 주제 3 (2022.01.37 ~ )
 **BOJ, CodeForce, Programmers 등 코딩 테스트 문제에 대한 풀이**
 
-**위 정렬에 대한 개요와 개개인의 리서치한 결과를 다음주 중에 있을 세미나를 준비하시오.**
 <br/><br/>
 ### Collaborators
 ![Mammom](https://avatars.githubusercontent.com/u/89181586?s=64&v=4)
