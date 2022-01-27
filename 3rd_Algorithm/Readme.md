@@ -8,7 +8,7 @@ BOJ, CodeForce, Programmers에서 문제 자율적으로 풀어서 설명
 ###### 김현섭 (Tasty-Programmer)
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=rlagustjq159)](https://solved.ac/rlagustjq159)
 
-###### 김민호 (Tasty-Programmer)
+###### 김민호 (Mammom)
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=kimcomcom)](https://solved.ac/kimcomcom)
 
 ###### 박도형 (pdhyeong)
@@ -16,7 +16,7 @@ BOJ, CodeForce, Programmers에서 문제 자율적으로 풀어서 설명
 ###### 장현석 (NightRabbits)
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=mungtaeng2)](https://solved.ac/mungtaeng2)
 
-###### 진호대 (Tasty-Programmer)
+###### 진호대 (Hod0ri)
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=jhd0238)](https://solved.ac/jhd0238)
 
 ###### 최형준 (MallangMallang)
