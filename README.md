@@ -28,15 +28,18 @@
 |기수 정렬|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Hod0ri](https://github.com/Hod0ri)|[NightRabbits](https://github.com/NightRabbits)|
 |계수 정렬|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[Mammom](https://github.com/Mammom)|
 
-### 주제 2 (2022.01.13 ~ )
-|주제| 1차 담당자| 2차 담당자 | 3차 담당자 |
-|---|-----------------------|---|---|
+### 주제 2 (2022.01.13 ~ 2022.01.27)
+|주제| 1차 담당자| 2차 담당자 |
+|---|-----------------------|---|
 |이분 탐색|[Tasty-Programmer](https://github.com/Tasty-Programmer)|[pdhyeong](https://github.com/pdhyeong)|
 |해시테이블 구현|[Mammom](https://github.com/Mammom)|[MallangMallang](https://github.com/Mallang-Mallang)|
 |DFS|[pdhyeong](https://github.com/pdhyeong)|[NightRabbits](https://github.com/NightRabbits)|
 |BFS|[NightRabbits](https://github.com/NightRabbits)|[Mammom](https://github.com/Mammom)|
 |LIS(최장증가수열)|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)|
 |LCA(최소공통조상)|[MallangMallang](https://github.com/Mallang-Mallang)|[Hod0ri](https://github.com/Hod0ri)|
+
+### 주제 3 (2022.01.37 ~ )
+**BOJ, CodeForce, Programmers 등 코딩 테스트 문제에 대한 풀이**
 
 **위 정렬에 대한 개요와 개개인의 리서치한 결과를 다음주 중에 있을 세미나를 준비하시오.**
 <br/><br/>
