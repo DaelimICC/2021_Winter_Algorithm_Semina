@@ -5,7 +5,7 @@
 2. 음이 아닌 정수 n, k에 대해 위 나머지를 구하는 것은 뤼카 정리의 내용
 
 ### 뤼카 정리 (Lucas Theorem)
---
+---
 음이 아닌 정수 n, k 그리고 소수 p에 대하여, n과 k를 p진법 전개식으로 나타내었을때,  
 ![54bdc01ea5e65417c55a1d7550cf9fcf970b611d](https://user-images.githubusercontent.com/65306839/152678747-2e2ddd1c-1929-46b7-a086-89e22b6e5a80.svg)
 ###### 사진 : 위키 피디아
