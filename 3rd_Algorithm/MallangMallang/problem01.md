@@ -18,9 +18,9 @@ public class Main {
     //스왑함수
     public static void swap(int arr[], num){
         if (arr[num] > arr[num+1]) {
-                    int temp = arr[num+1];
-                    arr[num+1] = arr[num];
-                    arr[num] = temp;
+            int temp = arr[num+1];
+            arr[num+1] = arr[num];
+            arr[num] = temp;
         }
     }
 
