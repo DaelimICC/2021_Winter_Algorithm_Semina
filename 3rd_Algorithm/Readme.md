@@ -12,6 +12,7 @@ BOJ, CodeForce, Programmers에서 문제 자율적으로 풀어서 설명
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=kimcomcom)](https://solved.ac/kimcomcom)
 
 ###### 박도형 (pdhyeong)
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=mungtaeng2)](https://solved.ac/slstls2)
 
 ###### 장현석 (NightRabbits)
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=mungtaeng2)](https://solved.ac/mungtaeng2)
