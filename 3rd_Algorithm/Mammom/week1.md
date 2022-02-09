@@ -86,3 +86,82 @@ fun main() = with(System.`in`.bufferedReader()){
     }
 }
 ```
+<br>
+
+# 1388 바닥장식(실버 4)
+
+![image](https://user-images.githubusercontent.com/89181586/153124666-6e88b8a0-ab35-468f-a2c7-05551f8b33fa.png)
+
+### 풀이과정
+~~~
+  1. 가로와 세로의 길이를 입력합니다
+  2. 줄의 크기만큼의 바닥모양을 입력합니다.
+  3. 가로와 세로에 이어져있는지 확인을 해줄 함수를 만들어줍니다.
+  4. 함수는 오른쪽으로 1씩커지거나 아래로 1씩 커지는 형식으로
+  5. 누워있는 모양은 가로일때만 이어질수있고 서있는 모양은 세로 일때만 이어집니다.
+  6. 인접한 모양이 같으면 if로 비교해서 수를 하나로 처리를 해줍니다.
+~~~
+
+### 코드과정
+~~~
+  1. 수의 입력을 먼저 받습니다.
+  2. 모양을 입력받습니다.
+  3. for문을 돌려 줄마다 인접한것이 있는지를 비교해줍니다.
+  4. 만약 인접해 있다면 c=1로 바꿈으로써 다음에 모양이 같더라도 num의 크기는 증가하지 않습니다.
+  5. 세로도 같은 방식으로 비교를 해주면 비교가 가능합니다.
+~~~
+
+### CODE
+```kt
+import java.util.*
+
+var s :Array<CharArray> = arrayOf()
+var c =0
+var num = 0
+
+fun ga(a:Int,b:Int) {
+    for(i in 0 until a){
+
+        for(j in 0 until b){
+            if(s[i][j] == '-'){
+                if(c==0){
+                    num++
+                    c=1
+                }
+            }else{
+                c=0
+            }
+
+        }
+        c=0
+    }
+}
+fun se(a:Int,b:Int) {
+    for(j in 0 until a){
+        for(i in 0 until b){
+            if(s[i][j] == '|'){
+                if(c==0){
+                    c=1
+                    num++
+                }
+            }else{
+                c=0
+            }
+        }
+        c=0
+    }
+}
+fun main() = with(Scanner(System.`in`.bufferedReader())){
+    var n = readLine()!!.split(" ").map { it.toInt() }
+    s = Array(n[0]){ CharArray(n[1]) }
+    for(i in 0 until n[0]){
+        var str = readLine()!!.toCharArray()
+        for(j in 0 until n[1]){
+            s[i][j]=str[j]
+        }
+    }
+    ga(n[0],n[1])
+    se(n[1],n[0])
+    println(num)
+}
+```
