@@ -10,4 +10,4 @@
 ##### 2주차
 |문제|티어|풀이|핵심 개념|
 |---|---|---|---|
-|[체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)|카카오||탐욕 알고리즘|
+|[체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)|카카오|[풀이](https://github.com/Hod0ri/Algorithm_Semina/blob/main/3rd_Algorithm/Hod0ri/Week03.md)|탐욕 알고리즘|
