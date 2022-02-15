@@ -1,4 +1,4 @@
-# 체육복 (카카오 코딩테스트 예제)
+# 체육복 (프로그래머스)
 ![image](https://user-images.githubusercontent.com/65306839/153964315-e2742d31-7cc9-4c80-860f-04512c349458.png)
 
 ### 풀이 과정
