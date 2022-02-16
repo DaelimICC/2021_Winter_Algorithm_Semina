@@ -10,5 +10,5 @@
 |문제|티어|풀이|핵심 개념|
 |---|---|---|---|
 |[1259 팰린드롬수](https://www.acmicpc.net/problem/1259)|브론즈 1|[풀이](https://github.com/Hod0ri/Algorithm_Semina/blob/main/3rd_Algorithm/MallangMallang/problem1259.md)|브루트포스|
-|||||
+|[11047 동전 0](https://www.acmicpc.net/problem/11047)|실버 3|[풀이](https://github.com/Hod0ri/Algorithm_Semina/blob/main/3rd_Algorithm/MallangMallang/problem11047.md)|그리디 알고리즘|
 |||||
