@@ -1,0 +1,59 @@
+# 2164 카드2 (실버 4)
+
+### 풀이 과정
+1. N을 입력하면 1부터N까지의 순서로 놓아진다.
+2. 맨 앞의 수를 삭제하고 그 다음 앞의 수를 삭제한 뒤 삭제한 수를 맨 뒤에 삽입한다.
+3. 위 과정을 1개가 남을 때 까지 반복하고 남은 값을 출력한다.
+
+
+### 코드 설계
+1. 
+
+### 핵심 코드
+```java
+while(q.size() > 1) { //원소가 한 개만 남을 때 까지 반복
+  q.poll();	// 맨 앞의 원소 버림 
+	q.offer(q.poll());	// 맨 앞의 원소를 버림과 동시에 버려진 원소를 맨 뒤에 삽입 
+}
+		
+System.out.println(q.poll());	// 마지막으로 남은 원소 출력 
+```
+
+1. 원소가 한 개만 남을 때 까지 반복한다.
+2. 우선 맨 앞의 원소 버린다.
+3. 맨 앞의 원소를 버림과 동시에 버려진 원소를 맨 뒤에 삽입한다.
+4. 마지막으로 남은 원소를 출력한다.
+
+
+
+### 전체 코드
+```java
+import java.util.Queue;
+import java.util.LinkedList;
+ 
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		Queue<Integer> q = new LinkedList<>();
+		
+		int N = in.nextInt();
+		
+		for(int i = 1; i <= N; i++) {
+			q.offer(i);
+		}
+		
+		
+		while(q.size() > 1) {
+			q.poll();
+			q.offer(q.poll());
+		}
+		
+		System.out.println(q.poll());
+	}
+}
+```
