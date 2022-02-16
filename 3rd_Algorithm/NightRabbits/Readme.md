@@ -8,4 +8,4 @@
 ##### 2주차
 |문제|티어|풀이|핵심 개념|
 |---|---|---|---|
-|[1434 책 정리 ](https://www.acmicpc.net/problem/1434)|브2|[풀이]()|수학|
+|[1434 책 정리 ](https://www.acmicpc.net/problem/1434)|브2|[풀이](https://github.com/Hod0ri/Algorithm_Semina/blob/main/3rd_Algorithm/NightRabbits/problem4.md)|수학|
