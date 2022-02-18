@@ -38,8 +38,11 @@
 |LIS(최장증가수열)|[Hod0ri](https://github.com/Hod0ri)|[Tasty-Programmer](https://github.com/Tasty-Programmer)|
 |LCA(최소공통조상)|[MallangMallang](https://github.com/Mallang-Mallang)|[Hod0ri](https://github.com/Hod0ri)|
 
-### 주제 3 (2022.01.37 ~ )
+### 주제 3 (2022.01.27 ~ 2022.02.17)
 **BOJ, CodeForce, Programmers 등 코딩 테스트 문제에 대한 풀이**
+
+### 주제 4 (2022.02.17 ~ )
+**세미나 회고**
 
 <br/><br/>
 ### Collaborators
